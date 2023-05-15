@@ -30,10 +30,9 @@ header {
 }
 .nav {
   width: 100%;
-  padding: 0px 0px 30px;
+  padding: 0px 0px 0px;
   border: solid;
   display: flex;
-  justify-content: space-around;
   position: fixed;
   bottom: 0px;
   background-color: orange;
@@ -42,10 +41,18 @@ header {
 .bookmark,
 .profil {
   height: 50px;
-  width: 50px;
+  padding: 5px;
 }
 .profil {
   margin-top: 5px;
+}
+.link {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.active {
+  background-color: lightgray;
 }
 .topright {
   height: 60px;
@@ -58,9 +65,22 @@ header {
   display: flex;
 }
 .tag {
-  border: solid 1px;
   margin: 15px 5px;
   padding: 5px;
   border-radius: 10px;
   background-color: lightgray;
+}
+.pflanze {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 50px 100px 50px 50px;
+  box-shadow: 15px 15px 40px 5px #000000;
+}
+.imgname {
+  display: flex;
+  align-items: center;
+}
+.aboutme {
+  margin: 20px 50px 50px 50px;
 }
