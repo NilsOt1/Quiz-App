@@ -8,23 +8,17 @@ header {
   display: flex;
   justify-content: center;
 }
-.question1,
-.question2,
-.question3 {
+.question {
   border: solid;
   margin: 20px;
   display: flex;
   flex-direction: column;
 }
-.Frage1,
-.Frage2,
-.Frage3 {
+.Frage {
   text-align: center;
   margin: 30px;
 }
-.button1,
-.button2,
-.button3 {
+.button {
   justify-content: center;
   height: 50px;
   margin: 10px 150px;
