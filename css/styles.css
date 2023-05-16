@@ -12,18 +12,18 @@ header {
   justify-content: center;
   background-color: orange;
 }
-.question {
+.card {
   border: solid 2px black;
   margin: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.frage {
+.card__question {
   text-align: center;
   margin: 30px;
 }
-.button {
+.card__button {
   justify-content: center;
   height: 50px;
   margin: 10px 150px;
@@ -53,17 +53,17 @@ header {
 .active {
   background-color: lightgray;
 }
-.topright {
+.card__bookmark {
   height: 60px;
   width: 60px;
   position: absolute;
   top: -10px;
   right: 5px;
 }
-.categories {
-  display: flex;
+.card__categories {
 }
 .tag {
+  display: flex;
   margin: 15px 5px;
   padding: 5px;
   border-radius: 10px;

@@ -8,51 +8,57 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <h1>Quiz-App</h1>
     </header>
     <main>
-      <section class="question">
-        <p class="frage">What property flips the axes in flexbox?</p>
-        <img class="topright" src="images/bookmark-icon-12323.png" />
-        <button type="button" class="button">Show Answer</button>
-        <section class="categories">
-          <p class="tag">#html</p>
-          <p class="tag">#flexbox</p>
-          <p class="tag">#css</p>
+      <section class="card">
+        <p class="card__question">What property flips the axes in flexbox?</p>
+        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button type="button" class="card__button" data-js="answerbutton">
+          Show Answer
+        </button>
+        <section class="card__categories">
+          <p class="card__categories--flex">#html</p>
+          <p class="card__categories--flex">#flexbox</p>
+          <p class="card__categories--flex">#css</p>
         </section>
       </section>
-      <section class="question">
-        <p class="frage">Lorem Impsum dolor sit?</p>
-        <img class="topright" src="images/bookmark-icon-12323.png" />
-        <button type="button" class="button">Show Answer</button>
-        <section class="categories">
-          <p class="tag">#html</p>
-          <p class="tag">#flexbox</p>
-          <p class="tag">#css</p>
+      <section class="card">
+        <p class="card__question">Lorem Impsum dolor sit?</p>
+        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button type="button" class="card__button" data-js="answerbutton">
+          Show Answer
+        </button>
+        <section class="card__categories">
+          <p class="card__categories--flex">#html</p>
+          <p class="card__categories--flex">#flexbox</p>
+          <p class="card__categories--flex">#css</p>
         </section>
       </section>
-      <section class="question">
-        <p class="frage">Warum ist die Banane krumm?</p>
-        <img class="topright" src="images/bookmark-icon-12323.png" />
-        <button type="button" class="button">Show Answer</button>
-        <section class="categories">
-          <p class="tag">#html</p>
-          <p class="tag">#flexbox</p>
-          <p class="tag">#css</p>
+      <section class="card">
+        <p class="card__question">Warum ist die Banane krumm?</p>
+        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button type="button" class="card__button" data-js="answerbutton">
+          Show Answer
+        </button>
+        <section class="card__categories">
+          <p class="card__categories--flex">#html</p>
+          <p class="card__categories--flex">#flexbox</p>
+          <p class="card__categories--flex">#css</p>
         </section>
       </section>
     </main>
     <footer>
       <nav class="nav">
-        <a class="link active" href="index.html"
-          ><img class="home" src="images/house-png-206.png"
+        <a class="nav__link active" href="index.html"
+          ><img class="nav__home" src="images/house-png-206.png"
         /></a>
-        <a class="link" href="bookmarks.html"
-          ><img class="bookmark" src="images/bookmark-icon-12323.png"
+        <a class="nav__link" href="bookmarks.html"
+          ><img class="nav__bookmark" src="images/bookmark-icon-12323.png"
         /></a>
-        <a class="link" href="profil.html"
-          ><img class="profil" src="images/profile-icon-png-905.png"
+        <a class="nav__link" href="profil.html"
+          ><img class="nav__profil" src="images/profile-icon-png-905.png"
         /></a>
       </nav>
     </footer>
