@@ -1,0 +1,18 @@
+@import "css/components/card.css";
+@import "css/components/navbar.css";
+@import "css/components/profil.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  border: solid;
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
