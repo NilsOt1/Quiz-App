@@ -1,0 +1,14 @@
+.main__userimg {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 50px 100px 50px 50px;
+  box-shadow: 15px 15px 40px 5px #000000;
+}
+.main__user {
+  display: flex;
+  align-items: center;
+}
+.main__aboutme {
+  margin: 20px 50px 50px 50px;
+}

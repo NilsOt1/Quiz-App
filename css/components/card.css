@@ -1,0 +1,32 @@
+.card {
+  border: solid 2px black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card__question {
+  text-align: center;
+  margin: 30px;
+}
+.card__button {
+  justify-content: center;
+  height: 50px;
+  margin: 10px 150px;
+}
+.card__bookmark {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+.card__categories {
+  display: flex;
+}
+.card__categories--flex {
+  margin: 15px 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
