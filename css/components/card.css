@@ -1,5 +1,7 @@
 .card {
+  background-color: #fad7a0;
   border: solid 2px black;
+  border-radius: 15px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
 }
 .card__button {
   justify-content: center;
+  border-radius: 15px;
   height: 50px;
   margin: 10px 150px;
 }
@@ -25,8 +28,9 @@
   display: flex;
 }
 .card__categories--flex {
+  border: solid 1px;
   margin: 15px 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: lightgray;
+  background-color: #f3ede4;
 }
