@@ -18,3 +18,11 @@ header {
   background-color: #f5b041;
   padding-bottom: 5px;
 }
+.darkmode {
+  background-color: #404040;
+  color: #ffffff;
+}
+.darkmode1 {
+  background-color: #7e7e7e;
+  color: #ffffff;
+}

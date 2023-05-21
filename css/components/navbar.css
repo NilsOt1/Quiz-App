@@ -4,7 +4,7 @@
   display: flex;
   position: fixed;
   bottom: 0px;
-  background-color: orange;
+  background-color: #ffa500;
 }
 .nav__home,
 .nav__bookmark,
