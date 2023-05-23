@@ -1,7 +1,9 @@
 .card {
-  border: solid 2px black;
-  margin: 20px;
   display: flex;
+  background-color: #fad7a0;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 20px;
   flex-direction: column;
   position: relative;
 }
@@ -10,9 +12,9 @@
   margin: 30px;
 }
 .card__button {
-  justify-content: center;
+  border-radius: 15px;
   height: 50px;
-  margin: 10px 150px;
+  width: 250px;
 }
 .card__bookmark {
   height: 60px;
@@ -25,8 +27,12 @@
   display: flex;
 }
 .card__categories--flex {
+  border: solid 1px;
   margin: 15px 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: lightgray;
+  background-color: #f3ede4;
+}
+.card__button--position {
+  text-align: center;
 }

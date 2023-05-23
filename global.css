@@ -8,11 +8,21 @@
   margin: 0;
 }
 body {
+  background-color: #fef9e7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
   border: solid;
   display: flex;
   justify-content: center;
-  background-color: orange;
+  background-color: #f5b041;
+  padding-bottom: 5px;
+}
+.darkmode {
+  background-color: #404040;
+  color: #ffffff;
+}
+.darkmode1 {
+  background-color: #7e7e7e;
+  color: #ffffff;
 }
