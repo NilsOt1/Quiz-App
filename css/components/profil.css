@@ -1,14 +1,37 @@
 .main__userimg {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin: 50px 100px 50px 50px;
+  width: 200px;
+  height: 200px;
+  margin: 30px 50px 40px 50px;
   box-shadow: 15px 15px 40px 5px #000000;
 }
 .main__user {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
-.main__aboutme {
-  margin: 20px 50px 50px 50px;
+.main__profile {
+  margin: 20px 50px 25px 50px;
+}
+.main--counter {
+  display: flex;
+  justify-content: space-around;
+}
+.profile__counter {
+  border: solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px 20px;
+  background-color: #fad7a0;
+  box-shadow: 5px 5px 20px 1px #000000;
+}
+.settings {
+  text-align: center;
+}
+.settings__button--darkmode {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 1px #000000;
+  background-color: #9a9a9a;
+  font-size: 15px;
+  cursor: pointer;
 }

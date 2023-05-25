@@ -13,20 +13,37 @@
       <h1>Userprofile</h1>
     </header>
     <main>
-        <section class="main__user">
-            <figure>
-                <img
-             class="main__userimg"
-                src="https://user-images.githubusercontent.com/125801955/236850362-d1336789-fe62-4eea-8abc-2af267625983.png"
-                alt="Pflanze"
-            />
-            </figure>
-            <h2>Max Doe</h2>
+      <section class="main__user">
+        <figure>
+          <img
+            class="main__userimg"
+            src="https://user-images.githubusercontent.com/125801955/236850362-d1336789-fe62-4eea-8abc-2af267625983.png"
+            alt="Pflanze"
+          />
+        </figure>
+        <h2>Max Doe</h2>
+      </section>
+      <section class="main__profile">
+        <p>
+          Just a very short description of a Person who likes to do Quiz. I want
+          this text to be a little longer. That's good for now.
+        </p>
+        <section class="main--counter">
+          <p class="profile__counter" data-js="profileQuestions">4 Questions</p>
+          <p class="profile__counter" data-js="profileBookmarks">4 Bookmarks</p>
         </section>
-        <section class="main__aboutme">
-            <h2>About me</h2>
-            <p>aboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutme</p>
-            <button type="button" data-js="buttonDarkMode">Darkmode</button>
+      </section>
+      <section class="settings">
+        <h2>Settings</h2>
+        <button
+          class="settings__button--darkmode"
+          type="button"
+          data-js="buttonDarkMode"
+          id="darkModeButton"
+        >
+          Darkmode
+        </button>
+      </section>
     </main>
     <footer>
       <nav class="nav" data-js="nav">
