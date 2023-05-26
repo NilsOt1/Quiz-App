@@ -30,6 +30,10 @@ header {
   filter: invert(100%) sepia(1%) saturate(1677%) hue-rotate(322deg)
     brightness(100%) contrast(108%);
 }
+.bookmark--button {
+  background: none;
+  border: none;
+}
 .hidden {
   display: none;
 }
