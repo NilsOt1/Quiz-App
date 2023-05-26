@@ -15,12 +15,19 @@
     <main>
       <section class="card">
         <p class="card__question">What property flips the axes in flexbox?</p>
-        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button
+          type="button"
+          class="bookmark--button card__bookmark"
+          data-js="cardBookmark"
+        >
+          <img src="images/bookmark_FILL0_wght400_GRAD200_opsz40.svg" />
+        </button>
         <section class="card__button--position">
-          <button type="button" class="card__button" data-js="answerbutton">
+          <button type="button" class="card__button" data-js="answerButton">
             Show Answer
           </button>
         </section>
+        <p class="hidden" data-js="cardAnswer">flex-direction</p>
         <section class="card__categories">
           <p class="card__categories--flex">#html</p>
           <p class="card__categories--flex">#flexbox</p>
@@ -29,11 +36,11 @@
       </section>
       <section class="card">
         <p class="card__question">Lorem Impsum dolor sit?</p>
-        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button type="button" class="bookmark--button card__bookmark">
+          <img src="images/bookmark_FILL0_wght400_GRAD200_opsz40.svg" />
+        </button>
         <section class="card__button--position">
-          <button type="button" class="card__button" data-js="answerbutton">
-            Show Answer
-          </button>
+          <button type="button" class="card__button">Show Answer</button>
         </section>
         <section class="card__categories">
           <p class="card__categories--flex">#html</p>
@@ -42,11 +49,11 @@
       </section>
       <section class="card">
         <p class="card__question">Warum ist die Banane krumm?</p>
-        <img class="card__bookmark" src="images/bookmark-icon-12323.png" />
+        <button type="button" class="bookmark--button card__bookmark">
+          <img src="images/bookmark_FILL0_wght400_GRAD200_opsz40.svg" />
+        </button>
         <section class="card__button--position">
-          <button type="button" class="card__button" data-js="answerbutton">
-            Show Answer
-          </button>
+          <button type="button" class="card__button">Show Answer</button>
         </section>
         <section class="card__categories">
           <p class="card__categories--flex">#Krümmungslehre</p>
