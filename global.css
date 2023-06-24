@@ -1,6 +1,7 @@
 @import "css/components/card.css";
 @import "css/components/navbar.css";
 @import "css/components/profil.css";
+@import "css/components/form.css";
 
 * {
   box-sizing: border-box;
