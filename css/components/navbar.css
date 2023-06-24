@@ -8,7 +8,8 @@
 }
 .nav__home,
 .nav__bookmark,
-.nav__profil {
+.nav__profil,
+.nav__form {
   height: 50px;
   padding: 5px;
 }
