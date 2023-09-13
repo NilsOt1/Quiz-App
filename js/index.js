@@ -16,23 +16,21 @@ buttonDarkMode?.addEventListener("click", () => {
   buttonDarkMode.textContent = "Lightmode";
 });*/
 
-const cardBookmark = document.querySelector('[data-js="cardBookmark"]');
+/* const cardBookmark = document.querySelector('[data-js="cardBookmark"]');
 
 cardBookmark.addEventListener("click", () => {
   cardBookmark.classList.toggle("bookmark--clicked");
 });
 
-const answerButton = document.querySelector('[data-js="answerButton"]');
-const cardAnswer = document.querySelector('[data-js="cardAnswer"]');
 
-answerButton.addEventListener("click", toggleAnswer);
+const answerButtons = document.querySelectorAll('[data-js="answerButton"]');
 
-function toggleAnswer() {
-  cardAnswer.classList.toggle("hidden");
-
-  if (cardAnswer.classList.contains("hidden")) {
-    answerButton.textContent = "Show Answer";
-  } else {
-    answerButton.textContent = "Hide Answer";
-  }
-}
+answerButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.textContent.includes("Show Answer")) {
+      button.textContent = "Hide Answer, por favor";
+    } else {
+      button.textContent = "Show Answer";
+    }
+  });
+});
