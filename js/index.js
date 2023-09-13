@@ -1,5 +1,6 @@
 const answerButtons = document.querySelectorAll('[data-js="answerButton"]');
 const cardAnswers = document.querySelectorAll('[data-js="cardAnswer"]');
+const questionForm = document.querySelector('[data-js="questionForm"]');
 
 answerButtons.forEach((button, answer) => {
   button.addEventListener("click", () => {
@@ -11,4 +12,11 @@ answerButtons.forEach((button, answer) => {
       cardAnswers[answer].classList.add("hidden");
     }
   });
+});
+
+questionForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 });
