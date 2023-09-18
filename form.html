@@ -21,10 +21,10 @@
           name="question"
           rows="5"
           cols="20"
-          data-js="question"
+          data-js="formTextArea"
           maxlength="150"
         ></textarea>
-        <p><span data-js="char"></span> characters left</p>
+        <p><span data-js="characters"></span> characters left</p>
         <label for="your-answer">Your answer</label>
         <textarea
           class="answer--input"
@@ -32,8 +32,10 @@
           name="answer"
           rows="5"
           cols="20"
+          data-js="formTextArea"
           maxlength="150"
         ></textarea>
+        <p><span data-js="characters"></span> characters left</p>
         <label for="your-tag">Tag:</label>
         <input id="your-tag" type="text" name="tag" class="tag--input" />
         <button type="submit" class="button__submit">submit</button>

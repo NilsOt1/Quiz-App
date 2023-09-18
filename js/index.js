@@ -2,18 +2,29 @@ const answerButtons = document.querySelectorAll('[data-js="answerButton"]');
 const cardAnswers = document.querySelectorAll('[data-js="cardAnswer"]');
 const questionForm = document.querySelector('[data-js="questionForm"]');
 const formMain = document.querySelector('[data-js="formMain"]');
-const formQuestion = document.querySelector('[data-js="question"]');
-const char = document.querySelector('[data-js="char"]');
+const characters = document.querySelectorAll('[data-js="characters"]');
+const formTextArea = document.querySelectorAll('[data-js="formTextArea"]');
 
 answerButtons.forEach((button, answer) => {
   button.addEventListener("click", () => {
     if (button.textContent.includes("Show Answer")) {
-      button.textContent = "Hide Answer, por favor";
+      button.textContent = "Hide Answer";
       cardAnswers[answer].classList.remove("hidden");
     } else {
       button.textContent = "Show Answer";
       cardAnswers[answer].classList.add("hidden");
     }
+  });
+});
+
+formTextArea.forEach((textArea, index) => {
+  characters.forEach((output) => {
+    output.innerText = 150;
+  });
+  textArea.addEventListener("input", () => {
+    const charactersLeft = 150 - textArea.value.length;
+
+    characters[index].innerText = charactersLeft;
   });
 });
 
@@ -37,15 +48,15 @@ questionForm.addEventListener("submit", (event) => {
   newAnswer.classList.add("card__question");
   newAnswer.textContent = data.answer;
   newTags.classList.add("card__categories--flex");
-  newTags.textContent = "# " + data.tag;
+  newTags.textContent = "#" + data.tag;
   questionCharacters.innerText = questionCharactersLeft;
 
-  char.append(questionCharacters);
   formMain.append(newCard);
   newCard.append(newQuestion, newAnswer, newTags);
 
   event.target.reset();
-  formQuestion.focus();
 
-  console.log(formQuestion.value.length);
+  formTextArea.forEach((textArea, index) => {
+    characters[index].innerText = 150;
+  });
 });
