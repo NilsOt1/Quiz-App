@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="global.css" />
-    <script src="js/index.js" defer></script>
+    <script src="js/form.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Add Questions</h1>
     </header>
-    <main>
-      <form class="form">
+    <main data-js="formMain">
+      <form class="form" data-js="questionForm">
         <label for="your-question">Your question:</label>
         <textarea
           class="question--input"
@@ -21,7 +21,10 @@
           name="question"
           rows="5"
           cols="20"
+          data-js="formTextArea"
+          maxlength="150"
         ></textarea>
+        <p><span data-js="characters"></span> characters left</p>
         <label for="your-answer">Your answer</label>
         <textarea
           class="answer--input"
@@ -29,7 +32,10 @@
           name="answer"
           rows="5"
           cols="20"
+          data-js="formTextArea"
+          maxlength="150"
         ></textarea>
+        <p><span data-js="characters"></span> characters left</p>
         <label for="your-tag">Tag:</label>
         <input id="your-tag" type="text" name="tag" class="tag--input" />
         <button type="submit" class="button__submit">submit</button>
